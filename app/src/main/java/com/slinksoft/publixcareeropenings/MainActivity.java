@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     String id, pass;
     TextView version;
     int v, rev;
-    boolean autofilled;
+    boolean autofilled, initialcheck;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +44,9 @@ public class MainActivity extends AppCompatActivity {
             public void onPageFinished(WebView view, String url) {
                 System.out.println("Done Loading");
 
-                if (!accPath.exists())
+                if (!accPath.exists() && !initialcheck)
                 {
+                    initialcheck = true;
                     AlertDialog note = new AlertDialog.Builder(MainActivity.this).create();
                     note.setTitle("INFO");
                     note.setMessage("If this is your first time using the app, go to \"Options\" and " +
