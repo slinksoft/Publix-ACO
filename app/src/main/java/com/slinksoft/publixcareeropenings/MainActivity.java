@@ -50,7 +50,9 @@ public class MainActivity extends AppCompatActivity {
                     AlertDialog note = new AlertDialog.Builder(MainActivity.this).create();
                     note.setTitle("INFO");
                     note.setMessage("If this is your first time using the app, go to \"Options\" and " +
-                            "fill in your login information to make logging in easier and faster!");
+                            "fill in your login information to make logging in easier and faster!\n\n" +
+                            "(NOTE: You will not stay logged in if you currently are due to session " +
+                            "expiration and security purposes; therefore, re-logging in will be necessary!)");
                     note.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialogInterface, int i) {
