@@ -1,5 +1,5 @@
 # Publix Associate Career Openings
-Public Associate Career Openings - An app that lets current associates look and apply for higher positions within the company (career, not retail). This app is written in Java using Android Studio, and also utilizes XML layouts and Javascript calls.
+Publix Associate Career Openings - An app that lets current associates look and apply for higher positions within the company (career, not retail). This app is written in Java using Android Studio, and also utilizes XML layouts and Javascript calls.
 
 
 <p align=center>
